@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Close tabs to the Left",
+  "version": "1.0",
+
+  "description": "Close Tabs to the left, now in your browser",
+
+  "icons": {
+    "48": "icons/close_left_tabs_logo_48.png",
+    "96": "icons/close_left_tabs_logo_96.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+      "tabs", "contextMenus", "menus"
+  ]
+}
