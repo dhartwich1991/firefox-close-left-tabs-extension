@@ -69,7 +69,7 @@ function closeTabsToTheLeft(tab) {
 function getTabsToTheLeft(tabs) {
   var tabsToClose = [];
   for (let tab of tabs) {
-    if (tab.index < selectedBrowserTab.index) {
+    if (!tab.pinned && tab.index < selectedBrowserTab.index) {
         tabsToClose.push(tab.id);
     }
   }
